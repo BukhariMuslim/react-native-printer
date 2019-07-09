@@ -1,0 +1,57 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:2:5-38
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:1-10:12
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:5:5-68
+	android:name
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:6:5-74
+	android:name
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:6:22-71
+uses-permission#android.hardware.usb.UsbAccessory
+ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:7:5-73
+	android:name
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:7:22-70
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml:8:22-73
+uses-sdk
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+		ADDED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/foremobile0/Documents/Project/fore/pos-app/node_modules/react-native-printer/android/src/main/AndroidManifest.xml

@@ -1,0 +1,30 @@
+{
+  "name": "react-native-printer",
+  "version": "0.0.2",
+  "description": "A React Native Library to support USB/BLE/Net printer for Android platform ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.isumeng.com:xie_s/react-native-printer.git"
+  },
+  "keywords": [
+    "react-native",
+    "printer",
+    "bluetooth",
+    "net",
+    "printer",
+    "rn",
+    "android"
+  ],
+  "dependencies": {
+    "buffer": "^5.0.7",
+    "escpos-printer-toolkit": "^1.0.8",
+    "iconv-lite": "^0.4.19",
+    "string_decoder": "^1.0.3"
+  },
+  "author": "diandanbao",
+  "license": "ISC"
+}
