@@ -9,8 +9,8 @@ var RNNetPrinter = NativeModules.RNNetPrinter;
 
 var textTo64Buffer = (text) => {
   let options = {
-    beep: false, 
-    cut: false, 
+    beep: false,
+    cut: false,
     tailingLine: false,
     encoding: 'GBK'
   }
@@ -18,28 +18,29 @@ var textTo64Buffer = (text) => {
   return buffer.toString('base64');
 }
 
-var billTo64Buffer = (text) => {
+var billTo64Buffer = (text, isStar) => {
   let options = {
-    beep: true, 
-    cut: true, 
+    beep: true,
+    cut: true,
     encoding: 'GBK',
-    tailingLine: true
+    tailingLine: true,
+    isStar,
   }
   const buffer = EPToolkit.exchange_text(text, options)
   return buffer.toString("base64");
 }
 
 export const USBPrinter = {
-  init: () => 
-    new Promise((resolve, reject) => 
+  init: () =>
+    new Promise((resolve, reject) =>
       RNUSBPrinter.init(() => resolve(), (error) => reject(error))),
-  
-  getDeviceList: () => 
-    new Promise((resolve, reject) => 
+
+  getDeviceList: () =>
+    new Promise((resolve, reject) =>
       RNUSBPrinter.getDeviceList((printers) => resolve(printers), (error) => reject(error))),
 
-  connectPrinter: (vendorId, productId) => 
-    new Promise((resolve, reject) => 
+  connectPrinter: (vendorId, productId) =>
+    new Promise((resolve, reject) =>
       RNUSBPrinter.connectPrinter(vendorId, productId, (printer) => resolve(printer), (error) => reject(error))),
 
   closeConn: () => new Promise((resolve, reject) => {
@@ -49,21 +50,21 @@ export const USBPrinter = {
 
   printText: (text) => RNUSBPrinter.printRawData(textTo64Buffer(text), (error) => console.warn(error)),
 
-  printBill: (text) => RNUSBPrinter.printRawData(billTo64Buffer(text), (error) => console.warn(error)),
+  printBill: (text, isStar) => RNUSBPrinter.printRawData(billTo64Buffer(text, isStar), (error) => console.warn(error)),
 }
 
 
 export const BLEPrinter = {
-  init:  () => 
-    new Promise((resolve, reject) => 
+  init: () =>
+    new Promise((resolve, reject) =>
       RNBLEPrinter.init(() => resolve(), (error) => reject(error))),
-  
-  getDeviceList: () => 
-    new Promise((resolve, reject) => 
+
+  getDeviceList: () =>
+    new Promise((resolve, reject) =>
       RNBLEPrinter.getDeviceList((printers) => resolve(printers), (error) => reject(error))),
 
-  connectPrinter: (inner_mac_address) => 
-    new Promise((resolve, reject) => 
+  connectPrinter: (inner_mac_address) =>
+    new Promise((resolve, reject) =>
       RNBLEPrinter.connectPrinter(inner_mac_address, (printer) => resolve(printer), (error) => reject(error))),
 
   closeConn: () => new Promise((resolve, reject) => {
@@ -73,16 +74,16 @@ export const BLEPrinter = {
 
   printText: (text) => RNBLEPrinter.printRawData(textTo64Buffer(text), (error) => console.warn(error)),
 
-  printBill: (text) => RNBLEPrinter.printRawData(billTo64Buffer(text), (error) => console.warn(error)), 
+  printBill: (text, isStar) => RNBLEPrinter.printRawData(billTo64Buffer(text, isStar), (error) => console.warn(error)),
 }
 
 export const NetPrinter = {
-  init:  () => 
-    new Promise((resolve, reject) => 
+  init: () =>
+    new Promise((resolve, reject) =>
       RNNetPrinter.init(() => resolve(), (error) => reject(error))),
-  
-  connectPrinter: (host, port) => 
-    new Promise((resolve, reject) => 
+
+  connectPrinter: (host, port) =>
+    new Promise((resolve, reject) =>
       RNNetPrinter.connectPrinter(host, port, (printer) => resolve(printer), (error) => reject(error))),
 
   closeConn: () => new Promise((resolve, reject) => {
@@ -92,5 +93,5 @@ export const NetPrinter = {
 
   printText: (text) => RNNetPrinter.printRawData(textTo64Buffer(text), (error) => console.warn(error)),
 
-  printBill: (text) => RNNetPrinter.printRawData(billTo64Buffer(text), (error) => console.warn(error)), 
+  printBill: (text) => RNNetPrinter.printRawData(billTo64Buffer(text), (error) => console.warn(error)),
 }
