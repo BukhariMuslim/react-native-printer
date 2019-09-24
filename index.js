@@ -75,7 +75,7 @@ export const BLEPrinter = {
 
   printText: (text) => RNBLEPrinter.printRawData(textTo64Buffer(text), (error) => console.warn(error)),
 
-  printBill: (text, isStar) => RNBLEPrinter.printRawData(billTo64Buffer(text, isStar), (error) => console.warn(error)),
+  printBill: (text, isStar, isCash) => RNBLEPrinter.printRawData(billTo64Buffer(text, isStar, isCash), (error) => console.warn(error)),
 }
 
 export const NetPrinter = {
