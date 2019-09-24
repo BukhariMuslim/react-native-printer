@@ -18,12 +18,13 @@ var textTo64Buffer = (text) => {
   return buffer.toString('base64');
 }
 
-var billTo64Buffer = (text, isStar) => {
+var billTo64Buffer = (text, isStar, isCash) => {
   let options = {
     beep: true,
     cut: true,
     encoding: 'GBK',
     tailingLine: true,
+    cash: isCash,
     isStar,
   }
   const buffer = EPToolkit.exchange_text(text, options)
@@ -50,7 +51,7 @@ export const USBPrinter = {
 
   printText: (text) => RNUSBPrinter.printRawData(textTo64Buffer(text), (error) => console.warn(error)),
 
-  printBill: (text, isStar) => RNUSBPrinter.printRawData(billTo64Buffer(text, isStar), (error) => console.warn(error)),
+  printBill: (text, isStar, isCash) => RNUSBPrinter.printRawData(billTo64Buffer(text, isStar, isCash), (error) => console.warn(error)),
 }
 
 
