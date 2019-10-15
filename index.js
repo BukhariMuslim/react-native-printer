@@ -18,16 +18,19 @@ var textTo64Buffer = (text) => {
   return buffer.toString('base64');
 }
 
-var billTo64Buffer = (text, isStar, isCash) => {
+var billTo64Buffer = (text) => {
   let options = {
     beep: true,
     cut: true,
     encoding: 'GBK',
-    tailingLine: true,
-    cash: isCash,
-    isStar,
+    tailingLine: true
   }
   const buffer = EPToolkit.exchange_text(text, options)
+  return buffer.toString("base64");
+}
+
+var cashDrawer = (isStar) => {
+  const buffer = EPToolkit.open_cash_drawer(isStar)
   return buffer.toString("base64");
 }
 
@@ -51,7 +54,7 @@ export const USBPrinter = {
 
   printText: (text) => RNUSBPrinter.printRawData(textTo64Buffer(text), (error) => console.warn(error)),
 
-  printBill: (text, isStar, isCash) => RNUSBPrinter.printRawData(billTo64Buffer(text, isStar, isCash), (error) => console.warn(error)),
+  printBill: (text) => RNUSBPrinter.printRawData(billTo64Buffer(text), (error) => console.warn(error)),
 }
 
 
@@ -75,7 +78,9 @@ export const BLEPrinter = {
 
   printText: (text) => RNBLEPrinter.printRawData(textTo64Buffer(text), (error) => console.warn(error)),
 
-  printBill: (text, isStar, isCash) => RNBLEPrinter.printRawData(billTo64Buffer(text, isStar, isCash), (error) => console.warn(error)),
+  printBill: (text) => RNBLEPrinter.printRawData(billTo64Buffer(text), (error) => console.warn(error)),
+
+  openCashDrawer: (isStar) => RNBLEPrinter.printRawData(cashDrawer(isStar), (error) => console.warn(error)),
 }
 
 export const NetPrinter = {
