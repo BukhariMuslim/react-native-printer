@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "buffer": "^5.0.7",
-    "escpos-printer-toolkit": "https://github.com/BukhariMuslim/escpos-printer-toolkit.git#dd9af30c1a4a5cc14689f713e11d3bd6e4dfda4b",
+    "escpos-printer-toolkit": "https://github.com/BukhariMuslim/escpos-printer-toolkit.git#4afe1518a1e1c3fe1a5f29ca118eb1aa8245684f",
     "iconv-lite": "^0.4.19",
     "string_decoder": "^1.0.3"
   },
